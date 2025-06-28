@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { axiosInstance } from "../lib/utils"; // update path if needed
 import toast from "react-hot-toast";
 import { AuthContext } from "../../context/AuthContext";
 
@@ -23,7 +24,7 @@ const VerifyOtpPage = () => {
     }
 
     try {
-      const res = await axios.post("/api/auth/signup", {
+      const res = await axiosInstance.post("/api/auth/signup", {
         email,
         otp,
         fullName,

@@ -248,6 +248,7 @@ import { AuthContext } from "../../context/AuthContext";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import { axiosInstance } from "../lib/utils";
 
 const LoginPage = () => {
   const [currState, setCurrState] = useState("Sign up");
@@ -285,7 +286,7 @@ const LoginPage = () => {
     }
 
     try {
-      const res = await axios.post("/api/auth/send-otp", { email });
+      const res = await axiosInstance.post("/api/auth/send-otp", { email });
       if (res.data.success) {
         toast.success("OTP sent to your email");
         navigate("/verify", {
