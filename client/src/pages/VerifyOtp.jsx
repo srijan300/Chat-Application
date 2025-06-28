@@ -24,7 +24,7 @@ const VerifyOtpPage = () => {
     }
 
     try {
-      const res = await axiosInstance.post("/api/auth/signup", {
+      const res = await axios.post("/api/auth/signup", {
         email,
         otp,
         fullName,

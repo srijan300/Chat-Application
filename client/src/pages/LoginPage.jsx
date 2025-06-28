@@ -286,7 +286,7 @@ const LoginPage = () => {
     }
 
     try {
-      const res = await axiosInstance.post("/api/auth/send-otp", { email });
+      const res = await axios.post(`${backendUrl}/api/auth/send-otp`, { email });
       if (res.data.success) {
         toast.success("OTP sent to your email");
         navigate("/verify", {
