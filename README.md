@@ -11,9 +11,7 @@
 - 🖼️ **Media Support** (images, GIFs, emojis, etc.)
 - 🔔 **Instant Delivery & Read Notifications**
 - 🔐 **Secure Login & Authentication**
-- 🌗 **Dark Mode Ready UI**
 - 📱 **Mobile-Friendly & Responsive Design**
-- 🧹 **Clear Chat History Option**
 - ⏰ **Timestamps for Every Message**
 
 ---
